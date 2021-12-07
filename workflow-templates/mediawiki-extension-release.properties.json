@@ -1,0 +1,5 @@
+{
+  "name": "mediawiki-extension-release",
+  "description": "release .tar.gz",
+  "filePatterns": ["extension.json"]
+}
