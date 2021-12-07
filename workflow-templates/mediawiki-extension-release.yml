@@ -24,8 +24,8 @@ jobs:
       - name: zip
         run: |
           mkdir ${{ steps.package.outputs.PROJECT_NAME }}
-          cp -r i18n/ README.md Lazyload.class.php extension.json ${{ steps.package.outputs.PROJECT_NAME }}
-          tar -czvf ${{ steps.package.outputs.PKG_NAME }} Lazyload
+          cp -r ***INPUT YOUR FILES*** ${{ steps.package.outputs.PROJECT_NAME }}
+          tar -czvf ${{ steps.package.outputs.PKG_NAME }} ${{ steps.package.outputs.PROJECT_NAME }}
       - name: "Artifact upload: tarball"
         uses: actions/upload-artifact@master
         with:
